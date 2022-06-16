@@ -1,31 +1,30 @@
-import React, { Component } from "react";
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
-
+import owais from "../assets/profile.jpeg";
+import React, { Component } from 'react';
+  
 export default class About extends Component {
   render() {
     return (
-      <div>
-        {/* <p>Design your About me page </p> */}
-        <div class="split left">
-          <div className="centered">
-            <img
-              className="profile_image"
-              src={profile_pic}
-              alt="Profile Pic"
-            ></img>
-          </div>
-        </div>
-        <div className="split right">
-          <div className="centered">
-            <div className="name_title">Your Name</div>
-            <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
-            </div>
-          </div>
+    <div>
+    <div class="split left">
+      <div className="centered">
+        <img 
+          className="profile_image"
+          src = {owais}
+          alt="Profile Pic"
+          ></img>
+      </div>
+    </div>
+    <div className="split right">
+      <div className="centered">
+        <div className="name_title">Owais Ibrahim</div>
+        <div className="brief_description">
+        <p>Hi, my name is Owais Ibrahim! I am a sophmore studying Computer Science at Princeton Univestiy. I am from Chicago, IL and my favorite 
+          food is deep dish Chicago style pizza. </p> 
         </div>
       </div>
-    );
+    </div>
+  </div>
+    )
   }
 }
